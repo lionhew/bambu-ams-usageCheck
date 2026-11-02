@@ -1,0 +1,4 @@
+PyYAML>=6.0
+requests>=2.31
+paho-mqtt>=2.0
+websocket-client>=1.6

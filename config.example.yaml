@@ -1,0 +1,34 @@
+# Example only — do NOT commit a machine-specific config.local.yaml.
+# 仅作模板：仓库不包含带本机路径的 config.local.yaml。
+# 首次运行 watch/check/devices/login 会自动对本机探测并生成 config.local.yaml。
+# 清空并重新探测: python -m bambu_ams_check reset-config
+# 或: python -m bambu_ams_check setup --reset
+
+region: cn  # cn | us
+
+# Prefer: python -m bambu_ams_check login --gui
+cloud:
+  access_token: ""   # filled by login (never invent in setup)
+  refresh_token: ""
+  user_id: ""        # filled by setup detection or login
+  # account: "you@example.com"
+  # password: ""
+
+device:
+  device_id: ""      # optional; setup may detect last selected machine
+  spool_weight_g: 1000
+
+watch:
+  # Filled on this PC by first-run / setup / reset-config — leave empty in example
+  directories: []
+  patterns:
+    - "*.gcode.3mf"
+    - "*.3mf"
+  debounce_seconds: 1.5
+  poll_interval_seconds: 1.0
+
+ui:
+  show_popup: true
+
+mqtt:
+  timeout_seconds: 12

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bambu-ams-check"
+version = "0.1.0"
+description = "Bambu Studio sidecar: compare slice filament usage vs AMS remaining"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "PyYAML>=6.0",
+  "requests>=2.31",
+  "paho-mqtt>=2.0",
+  "websocket-client>=1.6",
+]
+
+[project.scripts]
+bambu-ams-check = "bambu_ams_check.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["bambu_ams_check*"]

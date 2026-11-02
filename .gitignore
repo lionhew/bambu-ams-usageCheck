@@ -1,0 +1,36 @@
+# Secrets / local config
+config.local.yaml
+config.yaml
+.env
+*.token
+*.pem
+*.key
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Isolated Chromium profile for login --browser CDP
+.browser-profile/
+_last_check.log
+_last_check.err
+
+bambu-ams-usageCheck/

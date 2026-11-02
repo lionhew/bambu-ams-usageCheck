@@ -1,0 +1,33 @@
+{
+  "device_id": "MOCKDEVICE001",
+  "source": "fixture",
+  "trays": [
+    {
+      "ams_id": 0,
+      "tray_id": 0,
+      "absolute_tray": 0,
+      "type": "PLA",
+      "color": "FF0000FF",
+      "remain": 80,
+      "tray_info_idx": "GFA00"
+    },
+    {
+      "ams_id": 0,
+      "tray_id": 1,
+      "absolute_tray": 1,
+      "type": "PLA",
+      "color": "0000FFFF",
+      "remain": 50,
+      "tray_info_idx": "GFA99"
+    },
+    {
+      "ams_id": 0,
+      "tray_id": 2,
+      "absolute_tray": 2,
+      "type": "PLA",
+      "color": "00FF00FF",
+      "remain": 2,
+      "tray_info_idx": "GFA01"
+    }
+  ]
+}
